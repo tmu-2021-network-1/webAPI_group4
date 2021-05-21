@@ -1,4 +1,4 @@
-const uri = 'http://ap.mextractr.net/ma9/emotion_analyzer';
+const uri = 'https://ap.mextractr.net/ma9/emotion_analyzer';
 const id = 'json';
 const sheet = '45577E7B729603AA4E3E356BEB553040E977B4E7&text=%E6%98%8E%E6%97%A5%E3%82%81%E3%81%A1%E3%82%83%E3%81%8F%E3%81%A1%E3%82%83%E6%A5%BD%E3%81%97%E3%81%BF';
 const endpoint = `${uri}?out=${id}&apikey=${sheet}`;
