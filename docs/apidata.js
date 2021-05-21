@@ -2,7 +2,7 @@
 // const id = '1BpGnuwC4lZf9G2yFyiSrxbJuGO8gviV8mr-I2D3x4vA';
 // const sheet = 'Studio';
 // const endpoint = `${uri}?id=${id}&sheet=${sheet}`;
-const endpoint = 'https://api.search.nicovideo.jp/api/v2/snapshot/video/contents/search?q=%E5%88%9D%E9%9F%B3%E3%83%9F%E3%82%AF&targets=title&fields=contentId,title,viewCounter&filters[viewCounter][gte]=10000&_sort=-viewCounter&_offset=0&_limit=3&_context=apiguide';
+const endpoint = 'http://ap.mextractr.net/ma9/emotion_analyzer?out=json&apikey=45577E7B729603AA4E3E356BEB553040E977B4E7&text=%E6%98%8E%E6%97%A5%E3%82%81%E3%81%A1%E3%82%83%E3%81%8F%E3%81%A1%E3%82%83%E6%A5%BD%E3%81%97%E3%81%BF';
 
 const renderJson = (json) => {
   const studios = json.recor;
