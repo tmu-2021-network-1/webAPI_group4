@@ -1,7 +1,8 @@
-const uri = 'http://ap.mextractr.net/ma9/emotion_analyzer';
-const id = 'json';
-const sheet = '';
-const endpoint = `${uri}?out=${id}&apikey=${sheet}`;
+const uri = 'https://sheets.googleapis.com/v4/spreadsheets/11aa0JNhBTdEbj_HnwAVjc2aUwr8FPqgAtSWW89EhGH4/values/';
+//const id = 'json';
+const sheet = 'All';
+const key = 'AIzaSyAveXhMQp5tppUtTFo9ZXyfvsIBMFJcZEk';
+const endpoint = `${uri}${sheet}?key=${key}`;
 
 
 const renderJson = (json) => {
