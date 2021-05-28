@@ -1,32 +1,26 @@
-const uri = 'https://sheets.googleapis.com/v4/spreadsheets/11aa0JNhBTdEbj_HnwAVjc2aUwr8FPqgAtSWW89EhGH4/values/';
-//const id = 'json';
-const sheet = 'All';
-const key = 'AIzaSyAveXhMQp5tppUtTFo9ZXyfvsIBMFJcZEk';
-const endpoint = `${uri}${sheet}?key=${key}`;
-
+// const uri = 'https://script.google.com/macros/s/AKfycbxyacpN8y4nxSAnU0Eji6E_rBRDFTY7YoWWFa0clY5ELRhskgpt/exec';
+// const id = '1BpGnuwC4lZf9G2yFyiSrxbJuGO8gviV8mr-I2D3x4vA';
+// const sheet = 'Studio';
+// const endpoint = `${uri}?id=${id}&sheet=${sheet}`;
+const endpoint = 'https://script.google.com/macros/s/AKfycbxldXF6kuQUSbhI6M0pD5M9aDyr7lIJkw2VE__eupgvZ00zwIu_40-_hy_PlCSAVvK0/exec?id=AKfycbxldXF6kuQUSbhI6M0pD5M9aDyr7lIJkw2VE__eupgvZ00zwIu_40-_hy_PlCSAVvK0';
 
 const renderJson = (json) => {
-  const studios = json.recor;
+  const dataAll = json;
   
-  
-  
-  // const editingStudio = studios.find(d => d['name-ja'] === 'エディティングスタジオ');
-  // const studioDiv = document.createElement('div');
-  // studioDiv.textContent = editingStudio['name-ja'];
-  // document.getElementById('studios').appendChild(studioDiv);
-  
-//   studios.forEach((studio) => {
-//    const studioDiv = document.createElement('div');
-//    const studioTitle = document.createElement("span");
-//    studioTitle.className = 'studio-title';
-//    studioTitle.textContent = studio['name-ja'];
-//    const studioTitleEn = document.createElement("span");
-//    studioTitleEn.className = 'studio-title-en';
-//    studioTitleEn.textContent = studio['name-en'];
-//    studioDiv.appendChild(studioTitle);
-//    studioDiv.appendChild(studioTitleEn);
-//    document.getElementById('studios').appendChild(studioDiv);
-//   });
+
+   dataAll.forEach((uta) => {
+    const utaDiv = document.createElement('div');
+    const utaone = document.createElement("span");
+    utaone.className = 'utaone';
+    utaone.textContent = uta['one'];
+    const utatwo = document.createElement("span");
+    utatwo.className = 'utatwo';
+    utatwo.textContent = uta['two'];
+
+    utaDiv.appendChild(utaone);
+    utaDiv.appendChild(utatwo);
+    document.getElementById('utahyouzi').appendChild(utaDiv);
+   });
   document.getElementById('result').textContent = JSON.stringify(json, null, 2);
 }
 
