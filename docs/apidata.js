@@ -17,8 +17,14 @@ const renderJson = (json) => {
     utatwo.className = 'utatwo';
     utatwo.textContent = uta['two'];
 
+   const  Image = document.createElement('img');
+   Image.className = 'hyaku-image';
+   Image.src = uta['images'];
+   Image.alt = 'かるた画像です。';
+
     utaDiv.appendChild(utaone);
     utaDiv.appendChild(utatwo);
+    utaDiv.appendChild(Image);
     document.getElementById('utahyouzi').appendChild(utaDiv);
    });
   document.getElementById('result').textContent = JSON.stringify(json, null, 2);
