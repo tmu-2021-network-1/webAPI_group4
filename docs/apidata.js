@@ -22,10 +22,30 @@ const renderJson = (json) => {
    Image.src = uta['images'];
    Image.alt = 'かるた画像です。';
 
+    const analysisDiv = document.createElement('div');   
+
+    const likedislike = document.createElement("span");
+    likedislike.className = 'likedislike';
+    likedislike.textContent = uta['likedislike'];
+
+    const joysad = document.createElement("span");
+    joysad.className = 'joysad';
+    joysad.textContent = uta['joysad'];
+
+    const angerfear = document.createElement("span");
+    angerfear.className = 'angerfear';
+    angerfear.textContent = uta['angerfear'];
+
     utaDiv.appendChild(utaone);
     utaDiv.appendChild(utatwo);
     utaDiv.appendChild(Image);
+    
+    analysisDiv.appendChild(likedislike);
+    analysisDiv.appendChild(joysad);
+    analysisDiv.appendChild(angerfear);
+	   
     document.getElementById('utahyouzi').appendChild(utaDiv);
+    document.getElementById('utahyouzi').appendChild(analysisDiv);
    });
   document.getElementById('result').textContent = JSON.stringify(json, null, 2);
 }
