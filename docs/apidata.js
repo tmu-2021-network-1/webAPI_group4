@@ -46,6 +46,7 @@ const renderJson = (json) => {
 	   
     document.getElementById('utahyouzi').appendChild(utaDiv);
     document.getElementById('utahyouzi').appendChild(analysisDiv);
+    
    });
   document.getElementById('result').textContent = JSON.stringify(json, null, 2);
 }
