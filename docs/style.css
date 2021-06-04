@@ -1,0 +1,9 @@
+#haruuta{
+    -ms-writing-mode: tb-rl;
+    writing-mode: vertical-rl;
+  }
+
+  .karuta{
+      background-color: rgb(255, 233, 159);
+      margin: 1vw;
+  }
