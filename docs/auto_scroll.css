@@ -1,56 +1,56 @@
 .loop_wrap {
-    position: relative;
-    display: flex;
-    flex-flow: row nowrap;
-    width: 800vw;
-    overflow: hidden;
+  position: relative;
+  display: flex;
+  flex-flow: row nowrap;
+  width: 100%;  /*％にへんこう*/
+  overflow: hidden;
+}
+.loop_wrap ul {
+  display: flex;
+  flex-flow: row nowrap;
+  width: 800%; /*800％にへんこう*/
+  margin: 0;
+  padding: 0;
+}
+.loop_wrap li {
+  display: inline-block;
+  width: calc(800vw / 2);
+  min-width: 150px;
+  margin: 0 ;
+  list-style: none;
+}
+.loop_wrap li a {
+  display: block;
+}
+.loop_wrap li img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+.loop_wrap li a:hover {
+  opacity: .7;
+}
+.loop_wrap ul:first-child {
+  animation: loop 150s -75s linear infinite; /* ここの秒数で早さ決めれる*/
+  backface-visibility: hidden;
+  will-change: transform;
+}
+.loop_wrap ul + ul {
+  animation: loop2 150s linear infinite; /*上の秒数にあわせる（今は150）*/
+}
+@keyframes loop {
+  0% {
+    transform: translateX(100%);
   }
-  .loop_wrap ul {
-    display: flex;
-    flex-flow: row nowrap;
-    width: 100%;
-    margin: 0;
-    padding: 0;
+  to {
+    transform: translateX(-100%);
   }
-  .loop_wrap li {
-    display: inline-block;
-    width: calc(800vw / 2);
-    min-width: 150px;
-    margin: 0 ;
-    list-style: none;
+}
+@keyframes loop2 {
+  0% {
+    transform: translateX(0);
   }
-  .loop_wrap li a {
-    display: block;
+  to {
+    transform: translateX(-200%);
   }
-  .loop_wrap li img {
-    display: block;
-    width: 100%;
-    height: auto;
-  }
-  .loop_wrap li a:hover {
-    opacity: .7;
-  }
-  .loop_wrap ul:first-child {
-    animation: loop 150s -75s linear infinite;
-    backface-visibility: hidden;
-    will-change: transform;
-  }
-  .loop_wrap ul + ul {
-    animation: loop2 150s linear infinite;
-  }
-  @keyframes loop {
-    0% {
-      transform: translateX(100%);
-    }
-    to {
-      transform: translateX(-100%);
-    }
-  }
-  @keyframes loop2 {
-    0% {
-      transform: translateX(0);
-    }
-    to {
-      transform: translateX(-200%);
-    }
-  }
+}
