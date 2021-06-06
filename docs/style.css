@@ -7,3 +7,92 @@
       background-color: rgb(255, 233, 159);
       margin: 1vw;
   }
+  
+  .backgroundimg{
+    background-image: url("image/seigaiha.png");
+    /* background-size: 100% 100%; */
+    width:1920px;
+    height:1180px;
+    background-repeat: no-repeat;
+    background-color:rgba(255,255,255,0.8);
+    background-blend-mode:lighten;
+   
+  }
+
+  .haru{
+      position: relative;
+      width:362px;
+      height:362px;
+      top:268px;
+      left:732px;
+  }
+  .natu{
+    position: relative;
+    width:360px;
+    height:360px;
+    top:356px;
+    left:189px;
+}
+.aki{
+    position: relative;
+    width:360px;
+    height:360px;
+    top:356px;
+    left:188px;
+}
+.fuyu{
+    position: relative;
+    width:360px;
+    height:360px;
+    top:428px;
+    left:-726px;
+}
+.koi{
+    position: relative;
+    width:360px;
+    height:360px;
+    top:428px;
+    left:-722px;
+}
+.kiryo{
+    position: relative;
+    width:360px;
+    height:360px;
+    top:63px;
+    left:1100px;
+}
+.ribetu{
+    position: relative;
+    width:360px;
+    height:360px;
+    top:150px;
+    left:190px;
+}
+.zatu{
+    position: relative;
+    width:360px;
+    height:360px;
+    top:150px;
+    left:190px;
+}
+
+.explain{
+    position: relative;
+    left: 50px;
+    top:-450px;
+    width:250px;
+    height: 450px;
+    background-color: white;
+    writing-mode: vertical-rl;
+    padding: 20px 10px;
+}
+
+.footer{
+    position: relative;
+    width:1409px;
+    text-align: center;
+}
+footer{
+    width:auto;
+    height:200px;
+}
