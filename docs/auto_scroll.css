@@ -33,7 +33,7 @@
 .loop_wrap ul:first-child {
   animation: loop 150s -75s linear infinite; /* ここの秒数で早さ決めれる*/
   backface-visibility: hidden;
-  will-change: transform;
+  /* will-change: transform; 重い原因  */
 }
 .loop_wrap ul + ul {
   animation: loop2 150s linear infinite; /*上の秒数にあわせる（今は150）*/

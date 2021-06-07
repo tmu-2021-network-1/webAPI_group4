@@ -1,8 +1,12 @@
+html{
+  height:auto;
+}
 body{
-  height: 2100px;
     font-family: 'Shippori Mincho', serif;
+    height: auto;
 }
 .backgroundimg {
+    position: relative;
     background-image: url("image/seigaiha.png");
     width: 1409px;
     /* width:100%; */
@@ -11,79 +15,61 @@ body{
     background-color: rgba(255, 255, 255, 0.8);
     background-blend-mode: lighten;
   }
-  
+
   .haru {
     position: absolute;
-    /* width: 358px;
-    /* height: 358px; */
-    /* height: 191px; */ 
-    width: 315px;
-    height: 168px;
-   
-    top: 273px;
-    left: 758px;
+    width: 303px;
+    height: 161px;
+    top: 281px;
+    left: 754px;
   }
   .natu {
     position: absolute;
-    width: 309px;
-    height: 166px;
-    
-    top: 359px;
-    left: 578px;
+    top: 363px;
+    left: 573px;
   }
   .aki {
     position: absolute;
-    width: 309px;
-    height: 166px;
-    top: 359px;
-    left: 945px;
+    top: 363px;
+    left: 935px;
   }
   .koi {
     position: absolute;
-    width: 315px;
-    height: 168px;
-    top: 435px;
-    left: 391px;
+    width: 301px;
+    height: 161px;
+    top: 434px;
+    left: 394px;
   }
   .fuyu {
     position: absolute;
-    width: 315px;
-    height: 168px;
-   
-    top: 435px;
-    left: 758px;
+    width: 303px;
+    height: 161px;
+    top: 434px;
+    left: 754px;
   }
   
   .kiryo {
     position: absolute;
-    width: 315px;
-    height: 168px;
-    top:435px;
-    left: 1123px;
+    width: 301px;
+    height: 161px;
+    top:434px;
+    left: 1117px;
   }
   .ribetu {
     position: absolute;
-    width:298px;
-    height: 165px;
-    top: 521px;
-    left: 583px;
+    top: 518px;
+    left: 573px;
   }
   .zatu {
     position: absolute;
-    width:298px;
-    height: 165px;
-   
-    top: 521px;
-    left: 949px;
-   
-    /* top: 511px;
-    left: 933px; */
+    top: 518px;
+    left: 935px;
   }
   
   .explain {
-    position: relative;
+    position: absolute;
+    top: 250px;
     left: 50px;
-    top: -800px;
     width: 250px;
     height: 450px;
     background-color: white;
@@ -91,7 +77,27 @@ body{
     padding: 20px 10px;
   }
   
+  .linkougi{
+    position: relative;
+    width:1409px;
+    height: 1080px;
+    /* border: solid; */
+    overflow: hidden;
+  }
+
+
+  .sankou {
+    position: absolute;
+    top: 960px;
+    font-size:12px;
+    width: 1409px;
+    text-align: center;
+  }
+
   .footer {
+    position: relative;
+    font-size:20px;
+    top: 0px;
     width: auto;
     text-align: center;
   }
@@ -100,10 +106,20 @@ body{
     height: 200px;
   } */
   
-  .linkougi{
-    position: relative;
-    width:1409px;
-    height: 1080px;
-    /* border: solid; */
-    overflow: hidden;
+  .wrapper{
+    display: block;
+    position: absolute;
+    width:100%;
+    text-align:center;
+    margin:0 auto;
+  }
+  .con{
+    display: inline-block;
+  }
+  .fwari{
+    animation:fwari ease-in-out 2s infinite alternate;
+  }
+  @keyframes fwari{
+    0%   { transform:translate(-300px, 0%); }
+    100% { transform:translate(0%, 0%); }
   }
