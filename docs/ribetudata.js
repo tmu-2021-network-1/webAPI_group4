@@ -6,14 +6,14 @@ const endpoint = 'https://script.google.com/macros/s/AKfycbxldXF6kuQUSbhI6M0pD5M
 
 const renderJson = (json) => {
 
-  var  haru = [8,14,32,34,72];
+  var  haru = [15];
   const utaDiv = document.createElement('div');
   utaDiv.className = 'karuta';
   for(var i = 0;i<haru.length;i++){
     const karutaDiv = document.createElement('div');
     karutaDiv.className = 'karuta_matomari';
     const karutaDiv_each = document.createElement('div');
-    karutaDiv_each.className = `karuta${i}`;
+    karutaDiv_each.className = 'karuta_ribetu';
     // if((i-2)%3 == 0){
     // karutaDiv.classList.add('karuta_one');//１枚だけ並ぶカルタ専用のclassの追加
     // }
@@ -22,7 +22,7 @@ const renderJson = (json) => {
     // }
     const Image = document.createElement('img');
     Image.className = 'mon';
-    Image.src ="image/mon/haru.png";
+    Image.src ="image/mon/ribetu.png";
     Image.alt = '紋の画像';
     const utaauthor = document.createElement("p");
     const utaone = document.createElement("p"); 

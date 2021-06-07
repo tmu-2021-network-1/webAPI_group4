@@ -6,7 +6,7 @@ const endpoint = 'https://script.google.com/macros/s/AKfycbxldXF6kuQUSbhI6M0pD5M
 
 const renderJson = (json) => {
 
-  var  haru = [8,14,32,34,72];
+  var  haru = [6,10,23,92];
   const utaDiv = document.createElement('div');
   utaDiv.className = 'karuta';
   for(var i = 0;i<haru.length;i++){
@@ -22,7 +22,7 @@ const renderJson = (json) => {
     // }
     const Image = document.createElement('img');
     Image.className = 'mon';
-    Image.src ="image/mon/haru.png";
+    Image.src ="image/mon/kiryo.png";
     Image.alt = '紋の画像';
     const utaauthor = document.createElement("p");
     const utaone = document.createElement("p"); 

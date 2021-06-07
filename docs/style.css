@@ -1,96 +1,641 @@
-#haruuta {
-  -ms-writing-mode: tb-rl;
-  writing-mode: vertical-rl;
+body{
+    font-family: 'Shippori Mincho', serif;
+    margin:0;
+    padding:0;
+    color:rgb(59, 59, 59);
+    font-weight: bold;
+    background-image:linear-gradient(#fff,rgb(211, 221, 186), #fff);
+}
+.body_summer{
+  background-image:linear-gradient(#fff,rgb(193, 223, 241), #fff);
+}
+.body_fall{
+  background-image:linear-gradient(#fff,rgb(216, 164, 129), #fff);
+}
+.body_kiryo{
+  background-image:linear-gradient(#fff,rgb(176, 226, 201), #fff);
+}
+.body_winter{
+  background-image:linear-gradient(#fff,rgb(64, 85, 109), #fff);
+}
+.body_ribetu{
+  background-image:linear-gradient(#fff,rgb(212, 235, 183), #fff);
+}
+.body_koi{
+  background-image:linear-gradient(#fff,rgb(221, 170, 177), #fff);
+}
+.body_zatu{
+  background-image:linear-gradient(#fff,rgb(221, 212, 170), #fff);
+}
+header{
+    text-align: center;
+}
+.title{
+    width:100%;
+}
+main{
+    height:100vw;
+    margin :8vw 0;
+    position: relative;
+}
+.main_summer{
+  height:80vw;
+}
+.main_fall{
+  height:340vw;
+}
+.main_kiryo{
+  height:80vw;
+}
+.main_winter{
+  height:125vw;
+}
+.main_ribetu{
+  height:20vw;
+}
+.main_koi{
+  height:900vw;
+}
+.main_zatu{
+  height:365vw;
+}
+.karuta{
+    position: relative;
+}
+.karuta_ribetu{
+    display: flex;
+    justify-content: center;
+    align-items: center;   
+    position: absolute;
+    top: 0vw;
+    left: 45vw;
+}
+.karuta0{
+    display: flex;
+    justify-content: center;
+    align-items: center;   
+    position: absolute;
+    top: 0vw;
+    left: 25vw;
+}
+.karuta1{
+    display: flex;
+    justify-content: center;
+    align-items: center;   
+    position: absolute;
+    top: 20vw;
+    left: 62vw;
+}
+.karuta2{
+    display: flex;
+    justify-content: center;
+    align-items: center;   
+    position: absolute;
+    top: 40vw;
+    left: 25vw;
+}
+.karuta3{
+    display: flex;
+    justify-content: center;
+    align-items: center;   
+    position: absolute;
+    top: 60vw;
+    left: 62vw;
+}
+.karuta4{
+    display: flex;
+    justify-content: center;
+    align-items: center;   
+    position: absolute;
+    top: 80vw;
+    left: 25vw;
+}
+.karuta5{
+  display: flex;
+  justify-content: center;
+  align-items: center;   
+  position: absolute;
+  top: 100vw;
+  left: 62vw;
+}
+.karuta6{
+  display: flex;
+  justify-content: center;
+  align-items: center;   
+  position: absolute;
+  top: 120vw;
+  left: 25vw;
+}
+.karuta7{
+  display: flex;
+  justify-content: center;
+  align-items: center;   
+  position: absolute;
+  top: 140vw;
+  left: 62vw;
+}
+.karuta8{
+  display: flex;
+  justify-content: center;
+  align-items: center;   
+  position: absolute;
+  top: 160vw;
+  left: 25vw;
+}
+.karuta9{
+  display: flex;
+  justify-content: center;
+  align-items: center;   
+  position: absolute;
+  top: 180vw;
+  left: 62vw;
+}
+.karuta10{
+  display: flex;
+  justify-content: center;
+  align-items: center;   
+  position: absolute;
+  top: 200vw;
+  left: 25vw;
+}
+.karuta11{
+  display: flex;
+  justify-content: center;
+  align-items: center;   
+  position: absolute;
+  top: 220vw;
+  left: 62vw;
+}
+.karuta12{
+  display: flex;
+  justify-content: center;
+  align-items: center;   
+  position: absolute;
+  top: 240vw;
+  left: 25vw;
+}
+.karuta13{
+  display: flex;
+  justify-content: center;
+  align-items: center;   
+  position: absolute;
+  top: 260vw;
+  left: 62vw;
+}
+.karuta14{
+  display: flex;
+  justify-content: center;
+  align-items: center;   
+  position: absolute;
+  top: 280vw;
+  left: 25vw;
+}
+.karuta15{
+  display: flex;
+  justify-content: center;
+  align-items: center;   
+  position: absolute;
+  top: 300vw;
+  left: 62vw;
+}
+.karuta16{
+  display: flex;
+  justify-content: center;
+  align-items: center;   
+  position: absolute;
+  top: 320vw;
+  left: 25vw;
+}
+.karuta17{
+  display: flex;
+  justify-content: center;
+  align-items: center;   
+  position: absolute;
+  top:340vw;
+  left: 62vw;
+}
+.karuta18{
+  display: flex;
+  justify-content: center;
+  align-items: center;   
+  position: absolute;
+  top: 360vw;
+  left: 25vw;
+}
+.karuta19{
+  display: flex;
+  justify-content: center;
+  align-items: center;   
+  position: absolute;
+  top: 380vw;
+  left: 62vw;
+}
+.karuta20{
+  display: flex;
+  justify-content: center;
+  align-items: center;   
+  position: absolute;
+  top: 400vw;
+  left: 25vw;
+}
+.karuta21{
+display: flex;
+justify-content: center;
+align-items: center;   
+position: absolute;
+top: 420vw;
+left: 62vw;
+}
+.karuta22{
+display: flex;
+justify-content: center;
+align-items: center;   
+position: absolute;
+top: 440vw;
+left: 25vw;
+}
+.karuta23{
+display: flex;
+justify-content: center;
+align-items: center;   
+position: absolute;
+top: 460vw;
+left: 62vw;
+}
+.karuta24{
+display: flex;
+justify-content: center;
+align-items: center;   
+position: absolute;
+top: 480vw;
+left: 25vw;
+}
+.karuta25{
+display: flex;
+justify-content: center;
+align-items: center;   
+position: absolute;
+top: 500vw;
+left: 62vw;
+}
+.karuta26{
+display: flex;
+justify-content: center;
+align-items: center;   
+position: absolute;
+top: 520vw;
+left: 25vw;
+}
+.karuta27{
+display: flex;
+justify-content: center;
+align-items: center;   
+position: absolute;
+top: 540vw;
+left: 62vw;
+}
+.karuta28{
+display: flex;
+justify-content: center;
+align-items: center;   
+position: absolute;
+top: 560vw;
+left: 25vw;
+}
+.karuta29{
+display: flex;
+justify-content: center;
+align-items: center;   
+position: absolute;
+top: 580vw;
+left: 62vw;
+}
+.karuta30{
+display: flex;
+justify-content: center;
+align-items: center;   
+position: absolute;
+top: 600vw;
+left: 25vw;
+}
+.karuta31{
+display: flex;
+justify-content: center;
+align-items: center;   
+position: absolute;
+top: 620vw;
+left: 62vw;
+}
+.karuta32{
+display: flex;
+justify-content: center;
+align-items: center;   
+position: absolute;
+top: 640vw;
+left: 25vw;
+}
+.karuta33{
+  display: flex;
+  justify-content: center;
+  align-items: center;   
+  position: absolute;
+  top:660vw;
+  left: 62vw;
+}
+.karuta34{
+  display: flex;
+  justify-content: center;
+  align-items: center;   
+  position: absolute;
+  top: 680vw;
+  left: 25vw;
+}
+.karuta35{
+  display: flex;
+  justify-content: center;
+  align-items: center;   
+  position: absolute;
+  top: 700vw;
+  left: 62vw;
+}
+.karuta36{
+  display: flex;
+  justify-content: center;
+  align-items: center;   
+  position: absolute;
+  top: 720vw;
+  left: 25vw;
+}
+.karuta37{
+display: flex;
+justify-content: center;
+align-items: center;   
+position: absolute;
+top: 740vw;
+left: 62vw;
+}
+.karuta38{
+display: flex;
+justify-content: center;
+align-items: center;   
+position: absolute;
+top: 760vw;
+left: 25vw;
+}
+.karuta39{
+display: flex;
+justify-content: center;
+align-items: center;   
+position: absolute;
+top: 780vw;
+left: 62vw;
+}
+.karuta40{
+display: flex;
+justify-content: center;
+align-items: center;   
+position: absolute;
+top: 800vw;
+left: 25vw;
+}
+.karuta41{
+display: flex;
+justify-content: center;
+align-items: center;   
+position: absolute;
+top: 820vw;
+left: 62vw;
+}
+.karuta42{
+display: flex;
+justify-content: center;
+align-items: center;   
+position: absolute;
+top: 840vw;
+left: 25vw;
+}
+.karuta43{
+display: flex;
+justify-content: center;
+align-items: center;   
+position: absolute;
+top: 860vw;
+left: 62vw;
+}
+.karuta44{
+display: flex;
+justify-content: center;
+align-items: center;   
+position: absolute;
+top: 880vw;
+left: 25vw;
 }
 
-.karuta {
-  background-color: rgb(255, 233, 159);
-  margin: 1vw;
+.karuta_matomari{
+    -ms-writing-mode: tb-rl;
+    writing-mode: vertical-rl;
+    background-color: rgb(255, 250, 236);
+    padding:0 0 8vw 0;
+    line-height:1vw;
+    height:17vw;
+    border: rgb(84, 138, 97) solid 1.3vw;
+    text-align: center;
+	  display: inline-block;
+    position:relative
+}
+.mon{
+    width:8vw;
+    position: absolute;
+    top: 15vw;
+    left: 7vw;
+}
+.line{
+    font-size: 1.8vw;
+}
+.author{
+    font-size: 2vw;
+}
+footer{
+    text-align:center;
+    margin:0;
+    padding:0;
+}
+footer p{
+    font-size:2.5vw;
+    line-height:0vw;
+    margin:2vw 0 3vw 0;
+    padding:0;
 }
 
-.backgroundimg {
-  background-image: url("image/seigaiha.png");
-  width: 1920px;
-  height: 1080px;
-  background-repeat: no-repeat;
-  background-color: rgba(255, 255, 255, 0.8);
-  background-blend-mode: lighten;
-}
+/*棒グラフ*/
+/* barの位置や色　bar1,2,3とbar4,5,6の構造は一緒 */
+.bar1 {
+    position: absolute;
+    left: 1vw;/*棒グラフの横位置*/
+    bottom: 0.9vw;/*ここで棒グラフの下端が決まる*/
+    width: 3vw;/*棒グラフの横幅*/
+    margin: 0 auto;
+    background-color:rgb(229, 160, 175);
+  }
+  .bar2 {
+    position: absolute;
+    bottom: 0.9vw;
+    left: 5.5vw;
+    width: 3vw;
+    margin: 0 auto;
+    background-color:#e0b67d;
+  }
+  .bar3 {
+    position: absolute;
+    bottom: 0.9vw;
+    left: 10vw;
+    width: 3vw;
+    margin: 0 auto;
+    background-color: rgb(209, 127, 127);
+  }
+  .bar4 {
+    position: absolute;
+    left: 1vw;
+    width: 3vw;
+    margin: 0 auto;
+    background-color: rgb(83, 76, 88);
+  }
+  .bar5 {
+    position: absolute;
+    left: 5.5vw;
+    width: 3vw;
+    margin: 0 auto;
+    background-color: rgb(121, 163, 187);
+  }
+  .bar6 {
+    position: absolute;
+    left: 10vw;
+    width: 3vw;
+    margin: 0 auto;
+    background-color:rgb(83, 83, 126);
+  }
+  
+  /* kaisekiueDivとkaisekisitaDivの設定 */
+  .kaisekiue {
+    position: relative;
+    display: inline-block;
+    top: 0px;
+    width: 25vw;
+    height: 9vw;
+    font-size: 10px;
+    font-weight: normal;
+  }
+  .kaisekisita {
+    position: relative;
+    top: 0px;
+    display: inline-block;
+    width: 25vw;
+    height: 9vw;
+  }
+  
+  /* 文字の位置設定 */
+  .likedislike {
+    position: absolute;
+    left: 1vw;
+    bottom: -0.3vw;
+  }
+  .joysad {
+    position: absolute;
+    left: 5vw;
+    bottom: -0.3vw;
+  }
+  .angerfear {
+    position: absolute;
+    left: 10vw;
+    bottom: -0.3vw;
+  }
+  /*雲*/
+  .kumo2{
+    position: absolute;
+    left:65vw;
+    top:45vw;
+    animation:fwari ease-in-out 1.8s infinite alternate;
+  }
+  .kumo3{
+    position: absolute;
+    left: 70vw;
+    top:-10vw;
+    animation:fwari ease-in-out 2s infinite alternate;
+  }
+  .kumo4{
+    position: absolute;
+    left: 0vw;
+    top:-20vw;
+    animation:fwari ease-in-out 2.2s infinite alternate;
+  }
+  .kumo8{
+    position: absolute;
+    left: 0vw;
+    top:70vw;
+    animation:fwari ease-in-out 2.4s infinite alternate;
+  }
+  .kumo_link{
+    position: absolute;
+    left: 65vw;
+    top:100vw;
+    animation:fwari ease-in-out 2s infinite alternate;
+  }
+  .kumo_link_summer{
+    position: absolute;
+    left: 65vw;
+    top:90vw;
+    animation:fwari ease-in-out 2s infinite alternate;
+  }
+  .kumo_link_fall{
+    position: absolute;
+    left: 65vw;
+    top:345vw;
+    animation:fwari ease-in-out 2s infinite alternate;
+  }
+  .kumo_link_kiryo{
+    position: absolute;
+    left: 65vw;
+    top:90vw;
+    animation:fwari ease-in-out 2s infinite alternate;
+  }
+  .kumo_link_winter{
+    position: absolute;
+    left: 65vw;
+    top:130vw;
+    animation:fwari ease-in-out 2s infinite alternate;
+  }
+  .kumo_link_ribetu{
+    position: absolute;
+    left: 65vw;
+    top:25vw;
+    animation:fwari ease-in-out 2s infinite alternate;
+  }
+  .kumo_link_koi{
+    position: absolute;
+    left: 65vw;
+    top:900vw;
+    animation:fwari ease-in-out 2s infinite alternate;
+  }
+  .kumo_link_zatu{
+    position: absolute;
+    left: 65vw;
+    top:370vw;
+    animation:fwari ease-in-out 2s infinite alternate;
+  }
 
-.haru {
-  position: relative;
-  width: 358px;
-  height: 358px;
-  top: 248px;
-  left: 743px;
-}
-.natu {
-  position: relative;
-  width: 358px;
-  height: 358px;
-  top: 338px;
-  left: 196px;
-}
-.aki {
-  position: relative;
-  width: 358px;
-  height: 358px;
-  top: 338px;
-  left: 206px;
-}
-.fuyu {
-  position: relative;
-  width: 358px;
-  height: 358px;
-  top: 415px;
-  left: -712px;
-}
-.koi {
-  position: relative;
-  width: 358px;
-  height: 358px;
-  top: 415px;
-  left: -703px;
-}
-.kiryo {
-  position: relative;
-  width: 358px;
-  height: 358px;
-  top: 51px;
-  left: 1116px;
-}
-.ribetu {
-  position: relative;
-  width: 358px;
-  height: 358px;
-  top: 133px;
-  left: 200px;
-}
-.zatu {
-  position: relative;
-  width: 358px;
-  height: 358px;
-  top: 133px;
-  left: 207px;
-}
 
-.explain {
-  position: relative;
-  left: 50px;
-  top: -450px;
-  width: 250px;
-  height: 450px;
-  background-color: white;
-  writing-mode: vertical-rl;
-  padding: 20px 10px;
-}
 
-.footer {
-  position: relative;
-  width: 1409px;
-  text-align: center;
+
+  @keyframes fwari{
+    0%   { transform:translate(0%, 0%); }
+    100% { transform:translate(0%, -30px); }
+  }
+  
+
+/*レスポンシブ*/
+@media screen and (max-width: 900px) { /*タブレット用*/
+
 }
-footer {
-  width: auto;
-  height: 200px;
+@media screen and (max-width: 768px) { /*スマホ用*/
+    
 }

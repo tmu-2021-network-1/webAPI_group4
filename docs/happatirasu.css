@@ -1,0 +1,53 @@
+/* 桜を表示するコンテナのスタイル */
+.cherry-blossom-container {
+    position: relative;
+    height: 275vh; /* コンテナの高さ */
+    width: 100%; /* コンテナの横幅 */
+    overflow: hidden; /* コンテナからはみ出した要素を隠す */
+    /* background-color: #000000;  */ /*雪白くて見えないからテスト用の背景*/
+  }
+  
+  /*冬*/
+  /* .petal {
+    position: absolute;
+    background-color: #ffffff;
+    border-radius: 50% 50% 50% 50%;
+    animation: animate-petal 10s linear;
+  } */
+  /*冬ここまで*/
+.petal {
+    position: absolute;
+    background-color: #518b4f;
+    border-radius: 150% 0 150% 0;
+    animation: animate-petal 10s linear;
+  }
+
+  
+/* 秋
+  .petal {
+    position: absolute;
+    background-color: #cf4320;
+    border-radius: 150% 0 150% 0;
+    animation: animate-petal 10s linear;
+  }
+  秋ここまで*/
+
+  /* 花びらが降るアニメーション */
+  @keyframes animate-petal {
+    0% {
+      top: 0;
+      opacity: 0;
+      transform: rotate(0deg);
+    }
+    10% {
+      opacity: 1;
+    }
+    90% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 0;
+      top: 275vh;
+      transform: rotate(3000deg);
+    }
+  }

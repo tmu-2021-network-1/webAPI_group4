@@ -6,10 +6,10 @@ const endpoint = 'https://script.google.com/macros/s/AKfycbxldXF6kuQUSbhI6M0pD5M
 
 const renderJson = (json) => {
 
-  var  haru = [8,14,32,34,72];
+  var  aki = [0,4,16,21,22,25,28,31,36,46,68,69,70,78,86,90,93];
   const utaDiv = document.createElement('div');
   utaDiv.className = 'karuta';
-  for(var i = 0;i<haru.length;i++){
+  for(var i = 0;i<aki.length;i++){
     const karutaDiv = document.createElement('div');
     karutaDiv.className = 'karuta_matomari';
     const karutaDiv_each = document.createElement('div');
@@ -22,7 +22,7 @@ const renderJson = (json) => {
     // }
     const Image = document.createElement('img');
     Image.className = 'mon';
-    Image.src ="image/mon/haru.png";
+    Image.src ="image/mon/aki.png";
     Image.alt = '紋の画像';
     const utaauthor = document.createElement("p");
     const utaone = document.createElement("p"); 
@@ -36,12 +36,12 @@ const renderJson = (json) => {
     utathree.className = 'line';
     utafour.className = 'line';
     utafive.className = 'line';
-    utaauthor.textContent = json[haru[i]].author;
-    utaone.textContent = json[haru[i]].one;
-    utatwo.textContent = json[haru[i]].two;
-    utathree.textContent = json[haru[i]].three;
-    utafour.textContent = json[haru[i]].four;
-    utafive.textContent = json[haru[i]].five;
+    utaauthor.textContent = json[aki[i]].author;
+    utaone.textContent = json[aki[i]].one;
+    utatwo.textContent = json[aki[i]].two;
+    utathree.textContent = json[aki[i]].three;
+    utafour.textContent = json[aki[i]].four;
+    utafive.textContent = json[aki[i]].five;
     karutaDiv.appendChild(Image);
     karutaDiv.appendChild(utaauthor);
     karutaDiv.appendChild(utaone);
@@ -87,34 +87,34 @@ const renderJson = (json) => {
     bar6.className = "bar6";//fear
 
     //データを元に高さが変わる棒グラフ
-    if (json[haru[i]].likedislike > 0) {//likedislikeが正の時bar1(like)の高さを変化
-      bar1.style.height = json[haru[i]].likedislike * 3 + 0.5 + "vw";
+    if (json[aki[i]].likedislike > 0) {//likedislikeが正の時bar1(like)の高さを変化
+      bar1.style.height = json[aki[i]].likedislike * 3 + 0.5 + "vw";
     } else {//それ以外の時はbar1(like)の高さは５px
       bar1.style.height = 0.5 + "vw";
     }
-    if (json[haru[i]].joysad > 0) {
-      bar2.style.height = json[haru[i]].joysad * 3 + 0.5 + "vw";
+    if (json[aki[i]].joysad > 0) {
+      bar2.style.height = json[aki[i]].joysad * 3 + 0.5 + "vw";
     } else {
       bar2.style.height = 0.5 + "vw";
     }
-    if (json[haru[i]].angerfear > 0) {
-      bar3.style.height = json[haru[i]].angerfear * 3 + 0.5 + "vw";
+    if (json[aki[i]].angerfear > 0) {
+      bar3.style.height = json[aki[i]].angerfear * 3 + 0.5 + "vw";
     } else {
       bar3.style.height = 0.5 + "vw";
     }
 
-    if (json[haru[i]].likedislike < 0) {//likedislikeが負の時bar4(dislike)の高さを変化
-      bar4.style.height = json[haru[i]].likedislike * (-3) + 0.5 + "vw";
+    if (json[aki[i]].likedislike < 0) {//likedislikeが負の時bar4(dislike)の高さを変化
+      bar4.style.height = json[aki[i]].likedislike * (-3) + 0.5 + "vw";
     } else {//それ以外の時はbar1(dislike)の高さは５px
       bar4.style.height = 0.5 + "vw";
     }
-    if (json[haru[i]].joysad < 0) {
-      bar5.style.height = json[haru[i]].joysad * (-3) + 0.5 + "vw";
+    if (json[aki[i]].joysad < 0) {
+      bar5.style.height = json[aki[i]].joysad * (-3) + 0.5 + "vw";
     } else {
       bar5.style.height = 0.5 + "vw";
     }
-    if (json[haru[i]].angerfear < 0) {
-      bar6.style.height = json[haru[i]].angerfear * (-3) + 0.5 + "vw";
+    if (json[aki[i]].angerfear < 0) {
+      bar6.style.height = json[aki[i]].angerfear * (-3) + 0.5 + "vw";
     } else {
       bar6.style.height = 0.5 + "vw";
     }

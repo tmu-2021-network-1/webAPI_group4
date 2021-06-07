@@ -1,0 +1,115 @@
+#haruuta {
+  -ms-writing-mode: tb-rl;
+  writing-mode: vertical-rl;
+}
+
+.karuta {
+  background-color: rgb(255, 233, 159);
+  margin: 1vw;
+}
+
+/* barの位置や色　bar1,2,3とbar3,4,5の構造は一緒 */
+.bar1 {
+  position: absolute;
+  left: 20px;/*棒グラフの横位置*/
+  bottom: 12px;/*ここで棒グラフの下端が決まる*/
+  width: 30px;/*棒グラフの横幅*/
+  margin: 0 auto;
+  background-color:rgb(255,150,0);
+}
+.bar2 {
+  position: absolute;
+  bottom: 12px;
+  left: 70px;
+  width: 30px;
+  margin: 0 auto;
+  background-color:rgb(255, 230, 0);
+}
+.bar3 {
+  position: absolute;
+  bottom: 12px;
+  left: 120px;
+  width: 30px;
+  margin: 0 auto;
+  background-color: rgb(255,0,0);
+}
+.bar4 {
+  position: absolute;
+  left: 20px;
+  width: 30px;
+  margin: 0 auto;
+  background-color: rgb(153, 0, 255);
+}
+.bar5 {
+  position: absolute;
+  left: 70px;
+  width: 30px;
+  margin: 0 auto;
+  background-color: rgb(0, 162, 255);
+}
+.bar6 {
+  position: absolute;
+  left: 120px;
+  width: 30px;
+  margin: 0 auto;
+  background-color:rgb(0,0,255);
+}
+
+/* kaisekiueDivとkaisekisitaDivの設定 */
+.kaisekiue {
+  position: relative;
+  display: inline-block;
+  top: 0px;
+  width: 170px;
+  height: 90px;
+  font-size: 10px;
+}
+.kaisekisita {
+  position: relative;
+  top: 0px;
+  display: inline-block;
+  width: 200px;
+  height: 80px;
+}
+
+/* 文字の位置設定 */
+.likedislike {
+  position: absolute;
+  left: 12px;
+  bottom: -5px;
+}
+.joysad {
+  position: absolute;
+  left: 70px;
+  bottom: -5px;
+}
+.angerfear {
+  position: absolute;
+  left: 111px;
+  bottom: -5px;
+}
+
+/* 個々の解析結果（"kekka"i）の位置設定の例 */
+.kekka0{
+    position: relative;
+    border:solid;
+}
+.kekka1{
+    position: relative;
+    border:solid;
+    left:100px;
+}
+.kekka2{
+    position: relative;
+    top:30px;
+    border:solid;
+}
+.kekka3{
+    position: relative;
+    border:solid;
+}
+.kekka4{
+    position: relative;
+    border:solid;
+}
+

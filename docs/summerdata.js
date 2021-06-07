@@ -6,7 +6,7 @@ const endpoint = 'https://script.google.com/macros/s/AKfycbxldXF6kuQUSbhI6M0pD5M
 
 const renderJson = (json) => {
 
-  var  haru = [8,14,32,34,72];
+  var  haru = [1,35,80,97];
   const utaDiv = document.createElement('div');
   utaDiv.className = 'karuta';
   for(var i = 0;i<haru.length;i++){
@@ -22,7 +22,7 @@ const renderJson = (json) => {
     // }
     const Image = document.createElement('img');
     Image.className = 'mon';
-    Image.src ="image/mon/haru.png";
+    Image.src ="image/mon/natu.png";
     Image.alt = '紋の画像';
     const utaauthor = document.createElement("p");
     const utaone = document.createElement("p"); 
@@ -88,7 +88,7 @@ const renderJson = (json) => {
 
     //データを元に高さが変わる棒グラフ
     if (json[haru[i]].likedislike > 0) {//likedislikeが正の時bar1(like)の高さを変化
-      bar1.style.height = json[haru[i]].likedislike * 3 + 0.5 + "vw";
+      bar1.style.height = json[natu[i]].likedislike * 3 + 0.5 + "vw";
     } else {//それ以外の時はbar1(like)の高さは５px
       bar1.style.height = 0.5 + "vw";
     }
