@@ -101,25 +101,46 @@ body{
     width: auto;
     text-align: center;
   }
-  /* footer {
-    width: auto;
-    height: 200px;
-  } */
   
-  .wrapper{
-    display: block;
-    position: absolute;
-    width:100%;
-    text-align:center;
-    margin:0 auto;
+  /*タイトル入れる雲？ */
+  .title{
+    position:absolute;
+    z-index: 10;
+    width: 1409px;
+    height: 130px;
   }
-  .con{
-    display: inline-block;
-  }
-  .fwari{
-    animation:fwari ease-in-out 2s infinite alternate;
-  }
-  @keyframes fwari{
-    0%   { transform:translate(-300px, 0%); }
-    100% { transform:translate(0%, 0%); }
-  }
+
+/* 雲達 */
+.kumo{
+  position: relative;
+}
+.kumo img{
+  position: absolute;
+  z-index: 5;
+}
+
+
+/* 雲の場所 */
+.kumo1{
+  top: 850px;
+  left: 30px;
+}
+.kumo4{
+  top: 900px;
+  left: 700px;
+}
+.kumo6{
+  top: 600px;
+  left: 700px;
+}
+.kumo8{
+  top: 700px;
+  left: 50px;
+}
+.kumo10{
+  top: 750px;
+  left: 600px;
+}
+
+  
+ 
