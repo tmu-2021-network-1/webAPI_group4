@@ -1,76 +1,89 @@
 body{
+  height: 2100px;
     font-family: 'Shippori Mincho', serif;
 }
 .backgroundimg {
     background-image: url("image/seigaiha.png");
-    width: 1920px;
+    width: 1409px;
+    /* width:100%; */
     height: 1080px;
-    background-repeat: no-repeat;
+    /* background-repeat: no-repeat; */
     background-color: rgba(255, 255, 255, 0.8);
     background-blend-mode: lighten;
   }
   
   .haru {
-    position: relative;
-    width: 358px;
-    height: 358px;
-    top: 248px;
-    left: 743px;
+    position: absolute;
+    /* width: 358px;
+    /* height: 358px; */
+    /* height: 191px; */ 
+    width: 315px;
+    height: 168px;
+   
+    top: 273px;
+    left: 758px;
   }
   .natu {
-    position: relative;
-    width: 358px;
-    height: 358px;
-    top: 338px;
-    left: 196px;
+    position: absolute;
+    width: 309px;
+    height: 166px;
+    
+    top: 359px;
+    left: 578px;
   }
   .aki {
-    position: relative;
-    width: 358px;
-    height: 358px;
-    top: 338px;
-    left: 206px;
-  }
-  .fuyu {
-    position: relative;
-    width: 358px;
-    height: 358px;
-    top: 415px;
-    left: -712px;
+    position: absolute;
+    width: 309px;
+    height: 166px;
+    top: 359px;
+    left: 945px;
   }
   .koi {
-    position: relative;
-    width: 358px;
-    height: 358px;
-    top: 415px;
-    left: -703px;
+    position: absolute;
+    width: 315px;
+    height: 168px;
+    top: 435px;
+    left: 391px;
   }
+  .fuyu {
+    position: absolute;
+    width: 315px;
+    height: 168px;
+   
+    top: 435px;
+    left: 758px;
+  }
+  
   .kiryo {
-    position: relative;
-    width: 358px;
-    height: 358px;
-    top: 51px;
-    left: 1116px;
+    position: absolute;
+    width: 315px;
+    height: 168px;
+    top:435px;
+    left: 1123px;
   }
   .ribetu {
-    position: relative;
-    width: 358px;
-    height: 358px;
-    top: 133px;
-    left: 200px;
+    position: absolute;
+    width:298px;
+    height: 165px;
+    top: 521px;
+    left: 583px;
   }
   .zatu {
-    position: relative;
-    width: 358px;
-    height: 358px;
-    top: 133px;
-    left: 207px;
+    position: absolute;
+    width:298px;
+    height: 165px;
+   
+    top: 521px;
+    left: 949px;
+   
+    /* top: 511px;
+    left: 933px; */
   }
   
   .explain {
     position: relative;
     left: 50px;
-    top: -450px;
+    top: -800px;
     width: 250px;
     height: 450px;
     background-color: white;
@@ -79,13 +92,18 @@ body{
   }
   
   .footer {
-    position: relative;
-    width: 1409px;
+    width: auto;
     text-align: center;
   }
-  footer {
+  /* footer {
     width: auto;
     height: 200px;
+  } */
+  
+  .linkougi{
+    position: relative;
+    width:1409px;
+    height: 1080px;
+    /* border: solid; */
+    overflow: hidden;
   }
-  
-  
