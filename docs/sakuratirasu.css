@@ -1,7 +1,7 @@
 /* 桜を表示するコンテナのスタイル */
 .cherry-blossom-container {
     position: relative;
-    height: 300vh; /* コンテナの高さ */
+    height: 310vh; /* コンテナの高さ */
     width: 100%; /* コンテナの横幅 */
     overflow: hidden; /* コンテナからはみ出した要素を隠す */
     /* background-color: #000000;  */ /*雪白くて見えないからテスト用の背景*/
@@ -69,7 +69,7 @@
     }
     100% {
       opacity: 0;
-      top: 300vh;
+      top: 310vh;
       transform: rotate(3000deg);
     }
   }

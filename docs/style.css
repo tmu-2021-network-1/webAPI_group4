@@ -39,19 +39,19 @@ main{
     position: relative;
 }
 .main_summer{
-  height:80vw;
+  height:90vw;
 }
 .main_fall{
   height:340vw;
 }
 .main_kiryo{
-  height:80vw;
+  height:90vw;
 }
 .main_winter{
   height:125vw;
 }
 .main_ribetu{
-  height:20vw;
+  height:24vw;
 }
 .main_koi{
   height:900vw;
@@ -446,14 +446,15 @@ left: 25vw;
 .mon{
     width:8vw;
     position: absolute;
-    top: 15vw;
+    top: 16vw;
     left: 7vw;
 }
 .line{
-    font-size: 1.8vw;
+    font-size: 1.6vw;
 }
 .author{
-    font-size: 2vw;
+    font-size: 1.7vw;
+    line-height:1.8vw;
 }
 footer{
     text-align:center;
@@ -554,83 +555,160 @@ footer p{
     position: absolute;
     left:65vw;
     top:45vw;
-    animation:fwari ease-in-out 1.8s infinite alternate;
+    animation:fwari ease-in-out 4s infinite alternate;
   }
   .kumo3{
     position: absolute;
     left: 70vw;
     top:-10vw;
-    animation:fwari ease-in-out 2s infinite alternate;
+    animation:fwari ease-in-out 3s infinite alternate;
   }
   .kumo4{
     position: absolute;
-    left: 0vw;
+    left: 5vw;
     top:-20vw;
-    animation:fwari ease-in-out 2.2s infinite alternate;
+    animation:fwari ease-in-out 4s infinite alternate;
   }
   .kumo8{
     position: absolute;
-    left: 0vw;
+    left: 5vw;
     top:70vw;
-    animation:fwari ease-in-out 2.4s infinite alternate;
+    animation:fwari ease-in-out 3s infinite alternate;
+  }
+  .kumo7{
+    position: absolute;
+    left: 70vw;
+    top:100vw;
+    animation:fwari ease-in-out 4s infinite alternate;
+  }
+  .kumo6{
+    position: absolute;
+    left: 5vw;
+    top:150vw;
+    animation:fwari ease-in-out 3s infinite alternate;
+  }
+  .kumo9{
+    position: absolute;
+    left: 65vw;
+    top:215vw;
+    animation:fwari ease-in-out 4s infinite alternate;
+  }
+  .kumo10{
+    position: absolute;
+    left: -5vw;
+    top:270vw;
+    animation:fwari ease-in-out 3s infinite alternate;
+  }
+  .kumo5{
+    position: absolute;
+    left: 70vw;
+    top:330vw;
+    animation:fwari ease-in-out 4s infinite alternate;
+  }
+  .kumo11{
+    position: absolute;
+    left: 5vw;
+    top:380vw;
+    animation:fwari ease-in-out 3s infinite alternate;
+  }
+  .kumo12{
+    position: absolute;
+    left: 70vw;
+    top:445vw;
+    animation:fwari ease-in-out 4s infinite alternate;
+  }
+  .kumo1{
+    position: absolute;
+    left: 5vw;
+    top:500vw;
+    animation:fwari ease-in-out 3s infinite alternate;
+  }
+  .kumo13{
+    position: absolute;
+    left: 70vw;
+    top:560vw;
+    animation:fwari ease-in-out 4s infinite alternate;
+  }
+  .kumo14{
+    position: absolute;
+    left: 5vw;
+    top:630vw;
+    animation:fwari ease-in-out 3s infinite alternate;
+  }
+  .kumo15{
+    position: absolute;
+    left: 70vw;
+    top:700vw;
+    animation:fwari ease-in-out 4s infinite alternate;
+  }
+  .kumo16{
+    position: absolute;
+    left: 5vw;
+    top:780vw;
+    animation:fwari ease-in-out 3s infinite alternate;
+  }
+  .kumo17{
+    position: absolute;
+    left: 60vw;
+    top:850vw;
+    animation:fwari ease-in-out 4s infinite alternate;
   }
   .kumo_link{
     position: absolute;
-    left: 65vw;
+    left: 60vw;
     top:100vw;
-    animation:fwari ease-in-out 2s infinite alternate;
+    animation:fwari ease-in-out 3s infinite alternate;
   }
   .kumo_link_summer{
     position: absolute;
-    left: 65vw;
+    left: 60vw;
     top:90vw;
-    animation:fwari ease-in-out 2s infinite alternate;
+    animation:fwari ease-in-out 3s infinite alternate;
   }
   .kumo_link_fall{
     position: absolute;
-    left: 65vw;
-    top:345vw;
-    animation:fwari ease-in-out 2s infinite alternate;
-  }
-  .kumo_link_kiryo{
-    position: absolute;
-    left: 65vw;
-    top:90vw;
-    animation:fwari ease-in-out 2s infinite alternate;
+    left: 60vw;
+    top:340vw;
+    animation:fwari ease-in-out 3s infinite alternate;
   }
   .kumo_link_winter{
     position: absolute;
-    left: 65vw;
+    left: 60vw;
     top:130vw;
-    animation:fwari ease-in-out 2s infinite alternate;
+    animation:fwari ease-in-out 3s infinite alternate;
   }
+  .kumo_link_kiryo{
+    position: absolute;
+    left: 60vw;
+    top:90vw;
+    animation:fwari ease-in-out 3s infinite alternate;
+  }
+ 
   .kumo_link_ribetu{
     position: absolute;
-    left: 65vw;
+    left: 60vw;
     top:25vw;
-    animation:fwari ease-in-out 2s infinite alternate;
+    animation:fwari ease-in-out 3s infinite alternate;
   }
   .kumo_link_koi{
     position: absolute;
-    left: 65vw;
+    left: 60vw;
     top:900vw;
-    animation:fwari ease-in-out 2s infinite alternate;
+    animation:fwari ease-in-out 3s infinite alternate;
   }
   .kumo_link_zatu{
     position: absolute;
-    left: 65vw;
+    left: 60vw;
     top:370vw;
-    animation:fwari ease-in-out 2s infinite alternate;
+    animation:fwari ease-in-out 3s infinite alternate;
   }
-
-
-
-
+  .fwari{
+    z-index: 2;
+  }
   @keyframes fwari{
-    0%   { transform:translate(0%, 0%); }
-    100% { transform:translate(0%, -30px); }
+    0%   { transform:translate(-10%, 0%); }
+    100% { transform:translate(0%, -50px); }
   }
-  
 
 /*レスポンシブ*/
 @media screen and (max-width: 900px) { /*タブレット用*/
