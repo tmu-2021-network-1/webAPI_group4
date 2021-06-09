@@ -33,6 +33,10 @@ header{
 .title{
     width:100%;
 }
+.kumo_manager{
+  width:100vw;
+  overflow: hidden;
+}
 main{
     height:100vw;
     margin :8vw 0;

@@ -2,13 +2,15 @@ html{
   height:auto;
 }
 body{
+    margin: 0;
+    padding:0;
     font-family: 'Shippori Mincho', serif;
     height: auto;
 }
 .backgroundimg {
     position: relative;
     background-image: url("image/seigaiha.png");
-    width: 1409px;
+    width: 100vw;
     /* width:100%; */
     height: 1080px;
     /* background-repeat: no-repeat; */
@@ -73,16 +75,23 @@ body{
     top: 518px;
     left: 935px;
   }
-  
+  h1{
+    font-size: 30px;
+  }
+  h2{
+    font-size: 20px;
+  }
+  .explain p{
+    font-size: 15px;
+  }
   .explain {
     position: absolute;
     top: 250px;
-    left: 50px;
-    width: 250px;
-    height: 450px;
+    left: 70px;
+    height: 470px;
     background-color: white;
     writing-mode: vertical-rl;
-    padding: 20px 10px;
+    padding: 30px 0px;
   }
   
   .linkougi{
@@ -92,8 +101,6 @@ body{
     /* border: solid; */
     overflow: hidden;
   }
-
-
   .sankou {
     position: absolute;
     top: 960px;
@@ -101,6 +108,8 @@ body{
     width: 1409px;
     text-align: center;
   }
+
+  
 
   .footer {
     position: relative;
@@ -113,9 +122,9 @@ body{
   /*タイトル入れる雲？ */
   .title{
     position:absolute;
-    z-index: 10;
-    width: 1409px;
-    height: 130px;
+    z-index: 5;
+    width: 100vw;
+    height: 15%;
   }
 
 /* 雲達 */
@@ -124,30 +133,55 @@ body{
 }
 .kumo img{
   position: absolute;
-  z-index: 5;
+  z-index: 10;
 }
 
 
 /* 雲の場所 */
-.kumo1{
-  top: 850px;
+.kumo1{ /* 左上 */
+  width:40vw;
+  top: -50px;
+  left: 0px;
+  animation:fwari ease-in-out 3s infinite alternate;
+}
+.kumo4{  /* 右上 */
+  width:20vw;
+  top: 650px;
   left: 30px;
+  animation:fwari ease-in-out 4s infinite alternate;
 }
-.kumo4{
-  top: 900px;
-  left: 700px;
-}
-.kumo6{
-  top: 600px;
-  left: 700px;
-}
-.kumo8{
-  top: 700px;
-  left: 50px;
-}
-.kumo10{
-  top: 750px;
-  left: 600px;
+.kumo6{ /* 右下小 */
+  width:20vw;
+  top: 580px;
+  left: 1200px;
+  animation:fwari ease-in-out 3s infinite alternate;
 }
 
-  
+
+.kumo5{ /* 右上 */
+  width: 18vw;
+  top: 90px;
+  left: 1200px;
+  animation:fwari ease-in-out 4s infinite alternate;
+}
+.kumo2{/* 右下大 */
+  width: 40vw;
+  top: 580px;
+  left: 980px;
+  animation:fwari ease-in-out 3s infinite alternate;
+}
+.kumo11{/* 左上小 */
+  width: 15vw;
+  top: 190px;
+  left: 0px;
+  animation:fwari ease-in-out 3s infinite alternate;
+}
+.kumo_manager{
+  width:100vw;
+  overflow: hidden;
+}
+
+@keyframes fwari{
+  0%   { transform:translate(-10%, 0%); }
+  100% { transform:translate(0%, -30px); }
+}
