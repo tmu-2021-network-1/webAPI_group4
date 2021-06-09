@@ -17,6 +17,7 @@ body{
   }
 
   .haru {
+    clip-path:url(#cpath1);
     position: absolute;
     width: 303px;
     height: 161px;
@@ -24,16 +25,19 @@ body{
     left: 754px;
   }
   .natu {
+    clip-path:url(#cpath2);
     position: absolute;
     top: 363px;
     left: 573px;
   }
   .aki {
+    clip-path:url(#cpath2);
     position: absolute;
     top: 363px;
     left: 935px;
   }
   .koi {
+    clip-path:url(#cpath1);
     position: absolute;
     width: 301px;
     height: 161px;
@@ -41,6 +45,7 @@ body{
     left: 394px;
   }
   .fuyu {
+    clip-path:url(#cpath1);
     position: absolute;
     width: 303px;
     height: 161px;
@@ -49,6 +54,7 @@ body{
   }
   
   .kiryo {
+    clip-path:url(#cpath1);
     position: absolute;
     width: 301px;
     height: 161px;
@@ -56,11 +62,13 @@ body{
     left: 1117px;
   }
   .ribetu {
+    clip-path:url(#cpath2);
     position: absolute;
     top: 518px;
     left: 573px;
   }
   .zatu {
+    clip-path:url(#cpath2);
     position: absolute;
     top: 518px;
     left: 935px;
@@ -143,4 +151,3 @@ body{
 }
 
   
- 
