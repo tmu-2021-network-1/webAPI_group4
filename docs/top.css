@@ -12,7 +12,7 @@ body{
     background-image: url("image/seigaiha.png");
     width: 100%;
     /* width:100%; */
-    height: 1080px;
+    height: 1050px;
     /* background-repeat: no-repeat; */
     background-color: rgba(255, 255, 255, 0.8);
     background-blend-mode: lighten;
@@ -103,20 +103,27 @@ body{
   }
   .sankou {
     position: absolute;
-    top: 960px;
-    font-size:12px;
+    top: 915px;
+    font-size:10px;
     width: 1409px;
     text-align: center;
+  }
+  .sankou h1{
+    font-size:10px;
   }
 
   
 
   .footer {
     position: relative;
-    font-size:20px;
+    font-size:23px;
     top: 0px;
     width: auto;
     text-align: center;
+   
+  }
+  .footer p {
+    margin: 15px;
   }
   
   /*タイトル入れる雲？ */
@@ -152,7 +159,7 @@ body{
 }
 .kumo6{ /* 右下小 */
   width:20vw;
-  top: 580px;
+  top: 550px;
   left: 1200px;
   animation:fwari ease-in-out 3s infinite alternate;
 }
@@ -166,9 +173,9 @@ body{
 }
 .kumo2{/* 右下大 */
   width: 40vw;
-  top: 580px;
-  left: 980px;
-  animation:fwari ease-in-out 3s infinite alternate;
+  top: 583px;
+  left: 803px;
+  animation:fwari ease-in-out 4s infinite alternate;
 }
 .kumo11{/* 左上小 */
   width: 15vw;
@@ -176,6 +183,43 @@ body{
   left: 0px;
   animation:fwari ease-in-out 3s infinite alternate;
 }
+
+.kumo3{ /* 左上 */
+  width:42vw;
+  top: 610px;
+  left: 930px;
+  animation:fwari2 ease-in-out 4s infinite alternate;
+}
+
+.kumo7{ /* 左上 */
+  width:40vw;
+  top: 800px;
+  left: 50px;
+  animation:fwari ease-in-out 3s infinite alternate;
+}
+
+.kumo8{ /* 左上 */
+  width:40vw;
+  top: 1600px;
+  left: 900px;
+  animation:fwari ease-in-out 4s infinite alternate;
+}
+
+.kumo9{ /* 左上 */
+  width:45vw;
+  top: 770px;
+  left: 600px;
+  animation:fwari2 ease-in-out 4s infinite alternate;
+}
+
+.kumo10{ /* 左上 */
+  width:40vw;
+  top: 1830px;
+  left: 0px;
+  animation:fwari ease-in-out 3s infinite alternate;
+}
+
+
 .kumo_manager{
   width:100%;
   overflow: hidden;
@@ -185,3 +229,9 @@ body{
   0%   { transform:translate(-10%, 0%); }
   100% { transform:translate(0%, -30px); }
 }
+@keyframes fwari2{
+  0%   { transform:translate(-10%, 0%); }
+  100% { transform:translate(0%, -40px); }
+}
+
+
